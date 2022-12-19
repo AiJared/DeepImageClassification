@@ -110,3 +110,18 @@ I compiled and trained the model again. Below are the training results of our ne
 
 
 ![Screenshot 2022-12-19 113319](https://user-images.githubusercontent.com/78556152/208382222-591a29d9-b6b6-4c1e-8bb7-4fafa796a750.png)
+
+
+## Predict on New Data
+
+I used my model to classify an image that wasn't included in the training or validation sets.
+
+Note: Data augmentation and dropout layers are inactive at inference time.
+
+![Screenshot 2022-12-19 115003](https://user-images.githubusercontent.com/78556152/208385351-40ed6a13-caab-45c7-9764-4da2692eb377.png)
+
+
+# Save the Model
+Finally I saved my model and served it with tensorflow serving in docker during deployment
+
+![Screenshot 2022-12-19 115625](https://user-images.githubusercontent.com/78556152/208386894-bcd8e6cb-ab79-4b38-9033-02355c6b8059.png)
